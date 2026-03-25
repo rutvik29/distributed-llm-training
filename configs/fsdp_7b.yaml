@@ -1,0 +1,9 @@
+model_name: meta-llama/Meta-Llama-3-8B
+strategy: fsdp
+batch_size: 4
+gradient_accumulation_steps: 8
+learning_rate: 1.0e-4
+num_epochs: 3
+bf16: true
+gradient_checkpointing: true
+cpu_offload: false
